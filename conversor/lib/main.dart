@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
-import 'dart:convert';
 
 const URL_REQUEST = "https://api.hgbrasil.com/finance?format=json-cors&key=1fa7f390";
 
@@ -40,21 +39,38 @@ class _HomeState extends State<Home> {
 
   //chamada quando mudar o valor do real
   void _realChanged(String text){
+    _fieldIsEmpty(text);
     double real = double.parse(text);
     dolarController.text = (real/dolar).toStringAsFixed(2);//duas casas decimais
     euroController.text = (real/euro).toStringAsFixed(2);
   }
 
   void _dolarChanged(String text){
+    _fieldIsEmpty(text);
     double dolar = double.parse(text);
     realController.text = (dolar * this.dolar).toStringAsFixed(2);
     euroController.text = (dolar * this.dolar / euro).toStringAsFixed(2);
   }
 
   void _euroChanged(String text){
+    _fieldIsEmpty(text);
     double euro = double.parse(text);
     realController.text = (euro * this.euro).toStringAsFixed(2);
     dolarController.text = (euro * this.euro / dolar).toStringAsFixed(2);
+  }
+
+  void _clearAll(){
+    realController.text = "";  
+    dolarController.text = "";
+    euroController.text = "";  
+  }
+
+  //verifica se o campo está vazio, se sim, chama o clearAll
+  void _fieldIsEmpty(String text){
+    if(text.isEmpty) {
+      _clearAll();
+      return;
+    }
   }
   
   @override
