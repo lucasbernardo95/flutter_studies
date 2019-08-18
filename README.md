@@ -7,14 +7,15 @@
 <h4>Calculadora imc</h4>
 <h5>Aplicação para calcular o IMC (Índice de Massa Corporal). </h5>
 <div class="box">
-  <img src="resultPesoIdeal.png" height="500" >
+  <img src="resultPesoIdeal.png" >
 </div>
 <div class="box">
-  <img src="resultPesoAcima.png" height="500" >
+  <img src="resultPesoAcima.png">
 </div>
 <style>
   div.box {
     width: 250px;
+    height: 500px;
     display: inline-block;
   }
 </style>
