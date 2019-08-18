@@ -2,7 +2,15 @@
 
 ## Tests and studies flutter
 
-#### Contador de pessoas
-#### calculadora imc
-#### Conversor de moedas
-#### lista de tarefas
+<h4>Contador de pessoas</h4>
+<h4>Calculadora imc</h4>
+<h5>Aplicação para calcular o IMC (Índice de Massa Corporal). </h5>
+<div class="box">
+  <img src="resultPesoIdeal.png" height="500" width="250">
+</div>
+<div class="box">
+  <img src="resultPesoAcima.png" height="500" width="250">
+</div>
+<br/>
+<h4>Conversor de moedas </h4>
+<h4>Lista de tarefas </h4>
