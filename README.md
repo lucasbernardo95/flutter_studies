@@ -12,10 +12,12 @@
 <div class="box">
   <img src="resultPesoAcima.png" height="500" >
 </div>
-div.box {
-	width: 250px;
-	display: inline-block;
-}
+<style>
+  div.box {
+    width: 250px;
+    display: inline-block;
+  }
+</style>
 
 <h4>Conversor de moedas </h4>
 <h4>Lista de tarefas </h4>
