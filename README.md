@@ -1,7 +1,5 @@
 # flutter_studies
 
-## Tests and studies flutter
-
 <h4>Contador de pessoas</h4>
 <img src="contadorPessoas.png" height="400" width="200">
 
